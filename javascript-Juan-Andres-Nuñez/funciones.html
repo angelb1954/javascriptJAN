@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<script>
+
+//10-Funciones nativas-alert
+
+//alert("Mensaje");
+
+//Si creamos en mensaje en una variable:
+
+//var mensaje= "Hola, buenos dias"
+
+//alert(mensaje);
+
+//podemos incluir una expresion matemática
+
+//alert(40+50);
+
+
+//11-Funciones nativas-confirm
+
+//confirm("Desea proceder");
+
+//Si se acepta devuelve verdadero, si no Falso
+
+// console.log(confirm("Desea proceder"));//true
+
+
+  
+//   var confirmar = confirm('¿Seguro que desea proceder?');
+  
+//    if (confirmar) {
+  
+// console.log('Borrando cuenta de usuario');}
+  
+//   else{
+// console.log("Acción abortada");}
+
+
+
+
+//-12Funciones nativas-prompt
+//El método Window.prompt() muestra un diálogo con mensaje opcional, que solicita al usuario que introduzca un texto.
+
+ 
+  // var usuario = prompt('Introduce tu nombre de usuario: ');
+
+  // if (usuario){
+
+  //   console.log("Usuario introducido");
+  // }
+  
+  // else{
+
+  //   console.log("No has introducido un usuario")
+  // }
+
+//NOTA: En un string, cuando se introduce una cadena de texto devuelve TRUE. Si no se introduce nada"" devuelve FALSE
+
+//Vamos a utilizar prompt, confirm y alert para crear un programa de control de usuarios
+//Añadimos trim para eliminar espacios en blanco al principio y final de la cadena
+
+  // var usuario = prompt('Introduce tu nombre de usuario: ');
+  // if (usuario && usuario.trim()) {
+  //   var confirmar = confirm('¿Es ' + usuario + ' correcto?');
+  //   if (confirmar) {
+  //     alert("usuario correcto");
+  //   } else {
+  //     alert("usuario incorrecto");
+  //   }
+  // } else {
+  //   alert("No has introducido un usuario");
+  // }
+
+
+//13-Operador typeof
+
+  // console.log(typeof "Hola")
+  
+  // undefined
+  // console.log(typeof 36)
+  
+  
+  // var nombre = "Juan"
+  
+  // console.log(typeof nombre)
+  
+  // var objeto = "Juan"
+    
+  //   console.log(typeof objeto)
+  //   string
+  //   undefined
+  //   console.log(typeof "Hola")
+  //   string
+    
+  //   console.log(typeof 36)
+  //   number
+  //   undefined
+  //   var nombre = "Juan"
+  //   undefined
+  //   console.log(typeof nombre)
+  //   string
+    
+    
+  //   var objeto = { nombre: "Juan" }
+  //   undefined
+  //   objeto.nombre
+  //   'Juan'
+  //   console.log(typeof objeto)
+  //   object
+    
+  //   var numeros = [1, 2, 3, 4, 5]
+    
+  //   console.log(typeof numeros)
+  //   object
+    
+  //   console.log(typeof null)
+  //   object
+
+//14-Creacion de funciones
+
+// function saludar(){
+
+// console.log("Hola, Juan");
+
+// }
+
+
+
+
+
+
+//Uso de parametros
+
+  // function saludar(nombre, profesion) {
+
+  //   console.log("Hola, me llamo " + nombre + " y soy " + profesion);
+
+  // }
+  // saludar("Pedro", "carnicero");
+
+
+
+  function mayusculas(texto){
+
+return (texto.toUpperCase());
+
+
+  }
+var nombre = mayusculas("Juan")
+
+console.log(nombre);
+
+
+
+//15-La importancia de return
+
+// function sumarCuadrados(a,b){
+//   return(a*a+b*b);
+// }
+
+// alert(sumarCuadrados(123, 453));
+
+
+
+//16-Ambito de las variables
+
+  function nombrar() {
+
+    let miNombre = "AngelBGarcia";
+    console.log(miNombre);
+  }
+  nombrar();
+
+  console.log(miNombre);
+
+//Las variables se pueden invocar desde dentro de una función hacia una variable externa.
+//Desde fuera de la función no se puede invocar una variable interna de una función.
+//Salvo que la crear la función se elimine el prefijo var o let para crearla. Entonces javascript la considera una variable global y eso permite invocarla desde fuera de la función 
+
+
+//17 - Matrices (Arrays)
+
+var marcasCoches = ["Ford", "Seat", "Volswagen", "Opel"]
+
+//Admiten todo tipos de datos (string, numeros, otras matrices, funciones). Pueden convivir distintos tipos de datos enla misma matriz.
+//Tienen un índice secuencial numérico, que enpieza siempre por el 0.
+//Admiten la propiedad "length"
+
+
+
+//18- Métodos de matrices
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</head>
+<body>
+  
+
+
+
+
+
+
+
+</body>
+</html>
